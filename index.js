@@ -1,15 +1,5 @@
 // TODO: Add getUsername function
 
-async function getUsername() {
-    const response = await fetch('/.auth/me');
-    const json = await response.json();
-    if(json.clientPrincipal && json.clientPrincipal.userDetails) {
-        return json.clientPrincipal.userDetails;
-    } else {
-        return null;
-    }
-}
-
 async function displayMessage() {
     const messageElement = document.getElementById('message');
     const username = await getUsername();
