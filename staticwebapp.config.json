@@ -5,12 +5,12 @@
             "statusCode": 404
         },
         {
-            "route": "/.auth/login/github",
+            "route": "/.auth/login/twitter",
             "statusCode": 404
         },
         {
             "route": "/login",
-            "rewrite": "/.auth/login/twitter"
+            "rewrite": "/.auth/login/github"
         }
     ]
 }
